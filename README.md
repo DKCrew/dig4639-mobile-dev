@@ -9,4 +9,4 @@ I'm Jay Williams, a working professional artist getting into web design! I'm int
 
 https://www.linkedin.com/in/jay-williams-68312719b/
 
-Closes#12
+
