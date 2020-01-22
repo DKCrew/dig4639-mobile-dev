@@ -9,8 +9,5 @@ The *ice* folder contains in-class exercises.
 ## About Me
 I'm Jay Williams, a working professional artist getting into web design! I'm interested in working with frotnend web design for web and mobile platforms, as well as developing responsive and accessible user interfaces!
 
-<<<<<<< HEAD
-https://www.linkedin.com/in/jay-williams-68312719b/
-=======
-https://www.linkedin.com/in/jay-williams-68312719b/
->>>>>>> refs/remotes/origin/master
+https://www.linkedin.com/in/jay-williams-68312719b
+
