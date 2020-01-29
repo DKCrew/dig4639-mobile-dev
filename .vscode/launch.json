@@ -27,5 +27,6 @@
             "url": "http://localhost:8081",
             "webRoot": "${workspaceFolder}/ice/w2a/"
         }
+    
     ]
 }
