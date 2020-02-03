@@ -2,14 +2,13 @@ class Adder{
 
     constructor(props){
 
-    this.props =[a,b];
+    this.props = adder;
 
-    var a =5;
-    var b =10; 
+    var a =8;
+    var b =4; 
 }
 
-sum(props);
-
+sum(props)
     
 
 }
