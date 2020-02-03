@@ -1,4 +1,5 @@
 require(Adder.js);
 
-var Adder = new Adder({a=8,b=4});
-console.log(adder.render());
+var adder = new adder({a=8,b=4});
+
+console.log(adder.render(sum(props)));
