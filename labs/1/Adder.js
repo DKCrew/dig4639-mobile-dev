@@ -9,6 +9,7 @@ class Adder{
 
     }
 
-sum(props)
+sum(props);
 
+Return(Sum);
 }
