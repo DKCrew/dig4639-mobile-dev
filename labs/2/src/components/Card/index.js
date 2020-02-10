@@ -11,9 +11,7 @@ class Card {
     }
 
     onClick(e) {
-        console.log(this);
-        console.log(e.target);
-        console.log(e.target.checked);
+        console.log(this.props);
     }
 
     render() {
