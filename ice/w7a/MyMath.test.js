@@ -19,6 +19,9 @@ describe('Testing Addlist', () =>
   let list = [1,2,3,4];
   let result = Addlist(list);
   expect(result).toBe(10);
+  list = [1,2,3,4,100,10000];
+  restult = Addlist(list);
+  expect(result.toBe(10110))
 })
 
 describe('testing Divideby', () =>{

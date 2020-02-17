@@ -11,9 +11,16 @@ export function Sum (a, b) {
 }
 
 export function Addlist(list) {
-  if(typeof list == 'number')
-  var list = [1,2,3,4]
-  return list;
+  var result = 0;
+  // for(var mem of list){
+
+ // }
+  for(var i = 0; i <list.length; i++){
+    if(list[i] == underfined)
+    return undefined;
+    result = result + list[i];
+  }
+  return result;
 }
 
 export function DivideBy (a, b) {
