@@ -4,7 +4,7 @@ import './App.css';
 
 const todoList1 = [
   { completed: true, priority: 1, content: 'Complete demo' },
-  { completed: true, priority: 2, content: 'Complete demo' },
+  { completed: true, priority: 2, content: 'Complete demo 2' },
   { completed: false, priority: 1, content: 'Complete demo' }
 ]
 
