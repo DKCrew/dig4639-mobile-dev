@@ -9,7 +9,8 @@ render() {
             </div>
 
     );
-}
+
+    }
 }
 
 export default Card;
