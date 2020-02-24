@@ -4,10 +4,10 @@ import'./App.css';
 
 class App extends React.Component{
   render(){
-  return(
-    <Card content="This is a card!"></Card>
+    return(
+      <Card content="This is a card!"></Card>
   );
-}
+  }
 }
 
 export default App;
