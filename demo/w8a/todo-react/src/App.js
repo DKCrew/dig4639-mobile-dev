@@ -57,6 +57,7 @@ render() {
     this.state.todoList.filter((v) => v.completed) : this.state.todoList)
     .map((v, i) => <TodoItem key ={i} priority={v.priority} 
       removeTask={(id) => this.removeTask(id)}
+      
       content={v.content} completed={v.completed}/>)
     }
     
