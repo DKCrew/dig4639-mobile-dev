@@ -14,7 +14,7 @@ constructor (props){
 deleteCard(title){
 
     let cards = this.state.cards
-
+//sets new card state once cards have been filtered
     cards = cards.filter((v) => v.title !== title)
 
     this.setState({cards})
