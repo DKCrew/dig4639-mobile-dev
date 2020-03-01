@@ -5,8 +5,8 @@
     text-align: center;
     }
 
-    .close {
-        font-size: 1.5em;
-        float: right;
-        cursor: pointer;
-      }
+.close {
+    font-size: 1.5em;
+    float: right;
+    cursor: pointer;
+    }

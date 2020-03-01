@@ -6,6 +6,7 @@ class Card extends React.Component{
         super(props)
         this.props = props
     }
+    //renders an element (x) that closes a card after being clicked
 render() {
     return(
         <div className="card">
@@ -17,7 +18,7 @@ render() {
                 <h3>{this.props.title}</h3>
 
              <p>{this.props.content}</p>
-             
+
             </div>
     );
 
