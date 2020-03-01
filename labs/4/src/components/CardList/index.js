@@ -7,26 +7,24 @@ constructor (props){
     super(props)
 
     this.state = {
-
-        data: data.cards
-        
+        cards: data.cards
         }
     }
 //function for deleting a card, used in Card/index.js
 deleteCard(title){
 
-    let data = this.state.data
+    let cards = this.state.cards
 
-    data = data.filter((v) => v.title !== title)
+    cards = cards.filter((v) => v.title !== title)
 
-    this.setState({data})
+    this.setState({cards})
 }
 
 //sets the state of generated cards with data from data.json using map
 render(){
     return(
         <>
-        {this.state.data.map ((v) => {
+        {this.state.cards.map ((v) => {
             return <Card 
 
                 key={v.title}

@@ -13,7 +13,7 @@ render() {
 
             <span onClick={() => this.props.deleteCard(this.props.title)}
 
-                className="Close">X</span>
+                className="Close"><button type="button">Close</button></span>
 
                 <h3>{this.props.title}</h3>
 
