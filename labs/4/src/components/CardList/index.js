@@ -1,5 +1,5 @@
 import React from 'react'
-import cardData from '../../data.json'
+import data from '../../data.json'
 import Card from '../Card/index.js'
 
 class CardList extends React.Component {
@@ -8,35 +8,36 @@ constructor (props){
 
     this.state = {
 
-        cardData: cardData.cards
+        data: data.cards
         
         }
     }
 //function for deleting a card, used in Card/index.js
 deleteCard(title){
 
-    let cardData = this.state.cardData
+    let data = this.state.data
 
-    cardData = cardData.filter((v) => v.title !== title)
+    data = data.filter((v) => v.title !== title)
 
-    this.setState({cardData})
+    this.setState({data})
 }
 
 //sets the state of generated cards with data from data.json using map
 render(){
     return(
         <>
-        {this.state.cardData.map ((v) => <Card key={v.title}
+        {this.state.data.map ((v) => {
+            return <Card 
 
-        title={v.title}
+                key={v.title}
 
-        content={v.content}
+                title={v.title}
+                
+                content={v.content}
 
-        cardData={this.state.cardData}
+            deleteCard={() => this.deleteCard(v.title)}
 
-        deleteCard={() => this.deleteCard(v.title)}
-
-        />)
+        />})
 
     }
 
