@@ -12,10 +12,10 @@ constructor (props){
     }
 //function for deleting a card, used in Card/index.js
 deleteCard(title){
-
-    let cards = this.state.cards
+    console.log("Card deleted!")
+    console.log(this.state.cards)
 //sets new card state once cards have been filtered
-    cards = cards.filter((v) => v.title !== title)
+    let cards = this.state.cards.filter((v) => v.title !== title)
 
     this.setState({cards})
 }
