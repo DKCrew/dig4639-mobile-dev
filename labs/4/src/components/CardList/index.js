@@ -2,9 +2,12 @@ import React from 'react'
 import data from '../../data.json'
 import Card from '../Card/index.js'
 
+//attempted changes using title call method described in lab
+
 class CardList extends React.Component {
 
     constructor (props){
+
         super(props)
 
     this.state = {
@@ -18,29 +21,31 @@ deleteCard(title){
     
     console.log("Card deleted!")
     
-    
     console.log(this.state.cards)
+
 //sets new card state once cards have been filtered
     
-    let cards = this.state.cards.filter((v) => v.title !== title)
+    let cards = this.state.cards.filter((i) => i.title !== title)
 
     this.setState({cards})
 }
 
 //sets the state of generated cards with data from data.json using map
+
 render(){
     return(
         <>
-        {this.state.cards.map ((v) => {
+        {this.state.cards.map ((i) => {
+
             return <Card 
 
-                key={v.title}
+                key={i.title}
 
-                title={v.title}
+                title={i.title}
                 
-                content={v.content}
+                content={i.content}
 
-            deleteCard={() => this.deleteCard(v.title)}
+            deleteCard={() => this.deleteCard(i.title)}
 
         />})
 
