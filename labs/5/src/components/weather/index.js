@@ -1,10 +1,15 @@
 import React from "react";
+
 class Weather extends React.Component {
-    consttructor(props) {
+
+    constructor(props) {
+
         super(props);
 
         this.state = {
+
             periods: []
+
         };
     }
 
@@ -26,12 +31,13 @@ class Weather extends React.Component {
         .catch((error) => {console.log(error)});
 
     }
+
     render() {
 
         return(
 
           <div>
-              
+
           {
                 this.state.periods.map((value, index) => {
 
@@ -39,21 +45,20 @@ class Weather extends React.Component {
 
                         <h3>{value.name}</h3>
 
-                        <p><strong>Temperature {value.temperature}{value.temperatureUnit}</strong></p>
-                        
-                        <p>{value.detailedForecast}</p>
+                        <p>Temperature {value.temperature}{value.temperatureUnit}</p>
+
+                        <p>Today's Forcast {value.detailedForecast}</p>
 
                         </div>;
                 })
             
             }
-          
+
           </div>
-
+          
         );
-
-    }
+      }
     
-}
+    }
 
 export default Weather;
