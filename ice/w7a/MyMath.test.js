@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { Sum, Addlist, DivideBy } from './MyMath.js'
+=======
+import { Sum } from './MyMath.js'
+>>>>>>> 85308e767b6d679b23adec243374a9d10fde4199
 
 describe('Testing Sum', () => {
 it('Adds a string and a number', () => {

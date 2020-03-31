@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * two parameters must be numbers, return undefined if not
  * @param a The first number
@@ -28,4 +29,12 @@ export function DivideBy (a, b) {
     return (a/b);
   else 
     return undefined;
+=======
+function Sum (a, b) {
+  return a + b
+>>>>>>> 85308e767b6d679b23adec243374a9d10fde4199
 }
+
+console.log(Sum(2,3));
+
+export { Sum };
