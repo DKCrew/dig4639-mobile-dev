@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "../card/index.js";
 
 class Weather extends React.Component {
 
@@ -19,11 +20,9 @@ class Weather extends React.Component {
         .then(res => res.json())
 
         .then((result) => {
-
-         let periods = result.properties.periods;
          
          this.setState({
-             periods:periods
+             periods : result.properties.periods
          });
 
         })
@@ -39,24 +38,23 @@ class Weather extends React.Component {
           <div>
 
           {
-                this.state.periods.map((value, index) => {
+                this.state.periods.map((v) => 
 
-                    return  <div className="card" key={index}>
+                <Card key = {v.number}
 
-                        <h3>{value.name}</h3>
+                name = {v.name}
 
-                        <p>Temperature {value.temperature}{value.temperatureUnit}</p>
+                temperature = {v.temperature}
 
-                        <p>Today's Forcast {value.detailedForecast}</p>
+                temperatureUnit = {v.temperatureUnit}
 
-                        </div>;
-                })
+                detailedForecast = {v.detailedForecast} />)}
             
             }
 
           </div>
           
-        );
+        )
       }
     
     }
