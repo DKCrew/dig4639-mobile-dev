@@ -26,6 +26,10 @@ render() {
 
         <div className = "card">
 
+            <span onClick={() => this.props.deleteCard(this.props.title)}
+
+            className="Close"><button type="button">Close</button></span>
+
             <h3>{this.props.name}</h3>
 
             <h3>{this.props.temperature}{this.props.temperatureUnit}</h3>

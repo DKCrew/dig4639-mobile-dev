@@ -14,6 +14,20 @@ class Weather extends React.Component {
         };
     }
 
+    //function for deleting a card, used in Card/index.js
+deleteCard(name){
+    
+    console.log("Card deleted!")
+    
+    console.log(this.state.periods)
+
+//sets new card state once cards have been filtered
+    
+    let periods = this.state.periods.filter((i) => i.name !== name)
+
+    this.setState({periods})
+}
+
     componentDidMount(){
         fetch("https://api.weather.gov/gridpoints/MLB/25,69/forecast")
 
@@ -30,33 +44,33 @@ class Weather extends React.Component {
         .catch((error) => {console.log(error)});
 
     }
-
-    render() {
-
+    render(){
         return(
-
-          <div>
-
-          {
-                this.state.periods.map((v) => 
-
-                <Card key = {v.number}
-
-                name = {v.name}
-
-                temperature = {v.temperature}
-
-                temperatureUnit = {v.temperatureUnit}
-
-                detailedForecast = {v.detailedForecast} />)}
-            
-            }
-
-          </div>
-          
-        )
-      }
+            <>
+            {this.state.periods.map ((i) => {
     
-    }
+                return <Card 
+    
+                    key={i.number}
+    
+                    name = {i.name}
 
+                    temperature = {i.temperature}
+
+                    temperatureUnit = {i.temperatureUnit}
+
+                    detailedForecast = {i.detailedForecast}
+    
+                    deleteCard={() => this.deleteCard(i.name)}
+    
+            />})
+    
+        }
+    
+    </>)
+    
+        }
+    }
+    
+    
 export default Weather;

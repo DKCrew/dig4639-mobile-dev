@@ -3,10 +3,20 @@
     max-width: 300px;
     margin: auto;
     text-align: center;
+    border-radius: 25px;
+    background-color: rgb(195, 208, 231);
+    text-shadow: white 1px 1px;
+    
     }
 
 .close {
     font-size: 1.5em;
     float: right;
     cursor: pointer;
+    }
+
+p{
+font-style: italic;
+text-shadow: none;
+margin-bottom:10px;
     }
