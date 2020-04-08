@@ -42,7 +42,7 @@ export default class App extends React.Component {
 
     return(
 
-      <View style = {styles.container}>
+      <Card style = {styles.container}>
 
         {(this.state.thisState === TITLE_STATE) ?
         
@@ -62,28 +62,70 @@ export default class App extends React.Component {
           />
 
           </>
+ : (this.state.currentQuestion < questions.length) ?
 
-          : (this.state.thisQuestion < questions.length) ?
+ <>
 
-          <>
+   <Text 
+   
+   style={styles.text}>
+     
+     {questions[this.state.currentQuestion].question}
+     
+     </Text>
 
-          <Text style = {styles.text}>
+   <View>
 
-            {questions[this.state.thisQuestion].question}
+     {questions[this.state.thisQuestion].answers.map((ans, i) => {
 
-          </Text>
+       return <Button style={styles.button} 
+       
+       title={ans.text} 
+       
+       key={i} 
+       
+       onPress={() => this.nextQuestion(ans)} />
+       
+          }
+        )
+     }
 
-          <View>
+   </View>
+ </>
+  
+  :
 
-            {questions[this.state.thisQuestion].answers.map}((ans, i))
+  <>
 
-          </View>
+  <Text style = {styles.text}>
+    
+    Quiz Complete!
 
-          </>
-      }
-    )
+  </Text>
+
+  <Text style = {styles.text}>
+    
+    You Scored: {this.state.score}{questions.length}
+    
+  </Text>
+
+  <Button style = {styles.button}
+
+  title = "Try it Again!"
+
+  onPress={() => this.setState(
+    
+    { thisState: TITLE_STATE, thisQuestion: 0, score: 0 })}/>
+
+  </>
+
   }
 
+</Card>
+
+    )
+
+  }
 
 }
 
