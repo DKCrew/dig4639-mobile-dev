@@ -13,12 +13,12 @@ const styles = StyleSheet.create({
     backgroundColor: "#ffe6cc",
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: "#ffffff"
+    backgroundColor: '#ffffff'
   },
 
   button: {
     padding: 8,
-    backgroundColor: "#ffcccc"
+    backgroundColor: '#ffcccc'
   },
 
   text: {
