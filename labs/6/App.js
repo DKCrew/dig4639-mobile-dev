@@ -7,6 +7,30 @@ const TITLE_STATE = 0
 
 const QUESTION_STATE = 1
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#ffe6cc",
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: "#ffffff"
+  },
+
+  button: {
+    padding: 8,
+    backgroundColor: "#ffcccc"
+  },
+
+  text: {
+    marginTop: 10,
+    padding: 20,
+    textAlign: "center",
+    fontWeight: "bold",
+    fontSize: 22,
+  }
+}
+)
+
 export default class App extends React.Component {
 
   constructor(props){
@@ -88,7 +112,7 @@ export default class App extends React.Component {
      }
 
    </View>
-   
+
  </>
   
   :
@@ -132,33 +156,6 @@ export default class App extends React.Component {
     )
 
   }
-
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#ffe6cc",
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: "#ffffff"
-  },
 
-  button: {
-    padding: 8,
-    backgroundColor: "#ffcccc"
-  },
-
-  text: {
-    marginTop: 10,
-    padding: 20,
-    textAlign: "center",
-    fontWeight: "bold",
-    fontSize: 22,
-
-    
-    
-    
-
-  }
-})
