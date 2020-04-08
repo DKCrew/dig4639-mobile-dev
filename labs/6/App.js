@@ -132,8 +132,22 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: "antiqueWhite",
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+  button: {
+    padding: 8,
+    backgroundColor: "brown"
+  },
+
+  text: {
+    padding: 8,
+    textAlign: "center",
+    fontWeight: "bold:",
+    fontSize: 22,
+    color: "white"
+
+  }
 });
