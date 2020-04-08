@@ -15,9 +15,9 @@ export default class App extends React.Component {
 
     this.state ={
 
-      thisState: TITLE_STATE,
+      currentState: TITLE_STATE,
 
-      thisQuestion: 0,
+      currentQuestion: 0,
 
       score: 0,
 
@@ -32,7 +32,7 @@ export default class App extends React.Component {
       this.setState({counter: this.state.score + 1})
 
     }
-    this.setState({thisQuestion: this.state.thisQuestion + 1})
+    this.setState({currentQuestion: this.state.currentQuestion + 1})
   }
     
   render(){
@@ -41,7 +41,7 @@ export default class App extends React.Component {
 
       <Card style = {styles.container}>
 
-        {(this.state.thisState === TITLE_STATE) ?
+        {(this.state.currentState === TITLE_STATE) ?
         
         <>
           <Text style={styles.text}>
@@ -54,7 +54,7 @@ export default class App extends React.Component {
 
           style={styles.button}
 
-          onPress={ () => this.setState({thisState: QUESTION_STATE})}
+          onPress={ () => this.setState({currentState: QUESTION_STATE})}
 
           />
 
@@ -73,7 +73,7 @@ export default class App extends React.Component {
 
    <View>
 
-     {questions[this.state.thisQuestion].answers.map((ans, i) => {
+     {questions[this.state.currentQuestion].answers.map((ans, i) => {
 
        return <Button style = {styles.button} 
        
@@ -112,7 +112,7 @@ export default class App extends React.Component {
 
   onPress={() => this.setState(
     
-    { thisState: TITLE_STATE, thisQuestion: 0, score: 0 })}/>
+    { thisState: TITLE_STATE, currentQuestion: 0, score: 0 })}/>
 
   </>
 
@@ -129,22 +129,23 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "antiqueWhite",
+    backgroundColor: "#ffe6cc",
     alignItems: 'center',
     justifyContent: 'center',
   },
 
   button: {
     padding: 8,
-    backgroundColor: "brown"
+    backgroundColor: "#ff9980"
   },
 
   text: {
     padding: 8,
     textAlign: "center",
-    fontWeight: "bold:",
+    fontWeight: "bold",
     fontSize: 22,
-    color: "white"
+    color: "#ffffff"
+    
 
   }
 });
