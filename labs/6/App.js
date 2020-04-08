@@ -29,7 +29,7 @@ export default class App extends React.Component {
 
     if (i.correct){
 
-      this.setState({counter: this.state.score + 1})
+      this.setState({score: this.state.score + 1})
 
     }
     this.setState({thisQuestion: this.state.thisQuestion + 1})
@@ -102,7 +102,7 @@ export default class App extends React.Component {
 
   <Text style = {styles.text}>
     
-    You Scored: {this.state.score}{questions.length}
+    You Scored: {this.state.score} out of {questions.length}
     
   </Text>
 
@@ -141,6 +141,7 @@ const styles = StyleSheet.create({
   },
 
   text: {
+    marginTop: 10,
     padding: 20,
     textAlign: "center",
     fontWeight: "bold",
@@ -151,4 +152,4 @@ const styles = StyleSheet.create({
     
 
   }
-});
+})
