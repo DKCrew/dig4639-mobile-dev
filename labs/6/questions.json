@@ -1,0 +1,56 @@
+[
+    {
+        "Question": "In the Animal Crossing series, who upgrades your house and manages your loans?",
+            "answers":
+            [
+                {"text": "Tom Nook", "correct": true},
+                {"text": "Mario's 2nd brother, Dougie", "correct": false},
+                {"text": "Isabelle", "correct": false}
+            ]
+
+    },
+
+    {
+        "Question": "What color is Megaman?",
+            "answers":
+            [
+                {"text": "Blue", "correct": true},
+                {"text": "Pink", "correct": true},
+                {"text": "Yellow", "correct": true}
+            ]
+
+    },
+
+    {
+        "Question": "Who played Guile in the 1994 film 'Street Fighter'?",
+            "answers":
+            [
+                {"text": "Arnold Schwarzenegger", "correct": false},
+                {"text": "Jean-Claude Van Damme", "correct": true},
+                {"text": "Chris Evans", "correct": false}
+            ]
+
+    },
+
+    {
+        "Question": "Is Todd Howard human?",
+            "answers":
+            [
+                {"text": "No", "correct": false},
+                {"text": "Maybe", "correct": true}
+            ]
+
+    },
+
+    {
+        "Question": "What Pokemon does Pikachu evolve into?",
+            "answers":
+            [
+                {"text": "Gorochu", "correct": false},
+                {"text": "Pichu", "correct": false},
+                {"text": "Raichu", "correct": true}
+            ]
+
+    }
+
+]
