@@ -1,56 +1,71 @@
 [
     {
-        "question": "In the Animal Crossing series, who upgrades your house and manages your loans?",
-            "answers":
-            [
-                {"text": "Tom Nook", "correct": true},
-                {"text": "Mario's 2nd brother, Dougie", "correct": false},
-                {"text": "Isabelle", "correct": false}
-            ]
-
+      "question": "Who is Mario's brother?",
+      "answers" :
+      [
+        {"text": "Dougie",
+        "correct": false
+        },
+        {
+          "text": "Luigi",
+          "correct": true
+        }
+      ]
     },
-
+  
     {
-        "question": "What color is Megaman?",
-            "answers":
-            [
-                {"text": "Blue", "correct": true},
-                {"text": "Pink", "correct": true},
-                {"text": "Yellow", "correct": true}
-            ]
-
+      "question": "What color is Megaman?",
+      "answers" :
+      [
+        {"text": "Just Blue",
+        "correct": false
+        },
+        {
+          "text": "It depends on the weapon!",
+          "correct": true
+        }
+      ]
     },
-
-    {
-        "question": "Who played Guile in the 1994 film 'Street Fighter'?",
-            "answers":
-            [
-                {"text": "Arnold Schwarzenegger", "correct": false},
-                {"text": "Jean-Claude Van Damme", "correct": true},
-                {"text": "Chris Evans", "correct": false}
-            ]
-
+  
+      {
+      "question": "Who manages your loans and house construction in Animal Crossing?",
+      "answers" :
+      [
+        {"text": "Tom Nook",
+        "correct": true
+        },
+        {
+          "text": "Wario",
+          "correct": false
+        }
+      ]
     },
-
-    {
-        "question": "Is Todd Howard human?",
-            "answers":
-            [
-                {"text": "No", "correct": false},
-                {"text": "Maybe", "correct": true}
-            ]
-
+  
+      {
+      "question": "Pac man was originally called:",
+      "answers" :
+      [
+        {"text": "Chompy Joe",
+        "correct": false
+        },
+        {
+          "text": "Puck Man",
+          "correct": true
+        }
+      ]
     },
-
-    {
-        "question": "What Pokemon does Pikachu evolve into?",
-            "answers":
-            [
-                {"text": "Gorochu", "correct": false},
-                {"text": "Pichu", "correct": false},
-                {"text": "Raichu", "correct": true}
-            ]
-
+  
+        {
+      "question": "Do you think Dogs should be able to vote?",
+      "answers" :
+      [
+        {"text": "Yes",
+        "correct": true
+        },
+        {
+          "text": "No",
+          "correct": false
+        }
+      ]
     }
-
-]
+  ]

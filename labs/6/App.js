@@ -15,9 +15,9 @@ export default class App extends React.Component {
 
     this.state ={
 
-      currentState: TITLE_STATE,
+      thisState: TITLE_STATE,
 
-      currentQuestion: 0,
+      thisQuestion: 0,
 
       score: 0,
 
@@ -32,7 +32,7 @@ export default class App extends React.Component {
       this.setState({counter: this.state.score + 1})
 
     }
-    this.setState({currentQuestion: this.state.currentQuestion + 1})
+    this.setState({thisQuestion: this.state.thisQuestion + 1})
   }
     
   render(){
@@ -41,7 +41,7 @@ export default class App extends React.Component {
 
       <Card style = {styles.container}>
 
-        {(this.state.currentState === TITLE_STATE) ?
+        {(this.state.thistState === TITLE_STATE) ?
         
         <>
           <Text style={styles.text}>
@@ -54,12 +54,12 @@ export default class App extends React.Component {
 
           style={styles.button}
 
-          onPress={ () => this.setState({currentState: QUESTION_STATE})}
+          onPress={ () => this.setState({thisState: QUESTION_STATE})}
 
           />
 
           </>
- : (this.state.currentQuestion < questions.length) ?
+ : (this.state.thisQuestion < questions.length) ?
 
  <>
 
@@ -67,13 +67,13 @@ export default class App extends React.Component {
    
    style={styles.text}>
      
-     {questions[this.state.currentQuestion].question}
+     {questions[this.state.thisQuestion].question}
      
      </Text>
 
    <View>
 
-     {questions[this.state.currentQuestion].answers.map((ans, i) => {
+     {questions[this.state.thisQuestion].answers.map((ans, i) => {
 
        return <Button style = {styles.button} 
        
@@ -112,7 +112,7 @@ export default class App extends React.Component {
 
   onPress={() => this.setState(
     
-    { thisState: TITLE_STATE, currentQuestion: 0, score: 0 })}/>
+    { thisState: TITLE_STATE, thisQuestion: 0, score: 0 })}/>
 
   </>
 
@@ -132,19 +132,22 @@ const styles = StyleSheet.create({
     backgroundColor: "#ffe6cc",
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: "#ffffff"
   },
 
   button: {
     padding: 8,
-    backgroundColor: "#ff9980"
+    backgroundColor: "#ffcccc"
   },
 
   text: {
-    padding: 8,
+    padding: 20,
     textAlign: "center",
     fontWeight: "bold",
     fontSize: 22,
-    color: "#ffffff"
+
+    
+    
     
 
   }
