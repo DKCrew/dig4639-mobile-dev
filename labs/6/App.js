@@ -88,6 +88,7 @@ export default class App extends React.Component {
      }
 
    </View>
+   
  </>
   
   :
@@ -112,7 +113,15 @@ export default class App extends React.Component {
 
   onPress={() => this.setState(
     
-    { thisState: TITLE_STATE, thisQuestion: 0, score: 0 })}/>
+    { 
+      
+    thisState: TITLE_STATE, 
+    
+    thisQuestion: 0, 
+    
+    score: 0 })
+    
+    }/>
 
   </>
 
