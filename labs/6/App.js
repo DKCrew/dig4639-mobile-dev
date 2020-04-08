@@ -16,6 +16,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff'
   },
 
+  title: {
+    fontSize: 26,
+    fontWeight: "bold",
+    color: '#ff6666',
+    textAlign: "center"
+  },
+
   button: {
     padding: 8,
     backgroundColor: '#ffcccc'
@@ -63,7 +70,7 @@ export default class App extends React.Component {
 
     return(
 
-      <Card style = {styles.container}>
+      <Card containerStyle = {styles.container}>
 
         {(this.state.thistState === TITLE_STATE) ?
         
@@ -119,7 +126,7 @@ export default class App extends React.Component {
 
   <>
 
-  <Text style = {styles.text}>
+  <Text style = {styles.title}>
     
     Quiz Complete!
 
