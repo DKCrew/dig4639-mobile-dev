@@ -1,6 +1,6 @@
 [
     {
-        "Question": "In the Animal Crossing series, who upgrades your house and manages your loans?",
+        "question": "In the Animal Crossing series, who upgrades your house and manages your loans?",
             "answers":
             [
                 {"text": "Tom Nook", "correct": true},
@@ -11,7 +11,7 @@
     },
 
     {
-        "Question": "What color is Megaman?",
+        "question": "What color is Megaman?",
             "answers":
             [
                 {"text": "Blue", "correct": true},
@@ -22,7 +22,7 @@
     },
 
     {
-        "Question": "Who played Guile in the 1994 film 'Street Fighter'?",
+        "question": "Who played Guile in the 1994 film 'Street Fighter'?",
             "answers":
             [
                 {"text": "Arnold Schwarzenegger", "correct": false},
@@ -33,7 +33,7 @@
     },
 
     {
-        "Question": "Is Todd Howard human?",
+        "question": "Is Todd Howard human?",
             "answers":
             [
                 {"text": "No", "correct": false},
@@ -43,7 +43,7 @@
     },
 
     {
-        "Question": "What Pokemon does Pikachu evolve into?",
+        "question": "What Pokemon does Pikachu evolve into?",
             "answers":
             [
                 {"text": "Gorochu", "correct": false},

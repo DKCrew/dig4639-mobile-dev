@@ -7,9 +7,6 @@ const TITLE_STATE = 0
 
 const QUESTION_STATE = 1
 
-const TIME_LIMIT = 60
-
-
 export default class App extends React.Component {
 
   constructor(props){
@@ -55,7 +52,7 @@ export default class App extends React.Component {
 
           <Button title="Start Quiz" 
 
-          buttonStyle={styles.button}
+          style={styles.button}
 
           onPress={ () => this.setState({thisState: QUESTION_STATE})}
 
@@ -78,11 +75,11 @@ export default class App extends React.Component {
 
      {questions[this.state.thisQuestion].answers.map((ans, i) => {
 
-       return <Button style={styles.button} 
+       return <Button style = {styles.button} 
        
-       title={ans.text} 
+       title = {ans.text} 
        
-       key={i} 
+       key = {i} 
        
        onPress={() => this.nextQuestion(ans)} />
        
