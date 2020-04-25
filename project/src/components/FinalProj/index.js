@@ -69,8 +69,6 @@ add = (event) => {
 
 remove = (index) => {
 
-    //event.preventDefault();
-
         fetch('http://plato.mrl.ai:8080/contacts/remove',
         
             {
