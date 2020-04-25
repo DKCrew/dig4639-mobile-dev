@@ -69,6 +69,7 @@ add = (event) => {
 
 remove = (index) => {
 
+
         fetch('http://plato.mrl.ai:8080/contacts/remove',
         
             {
@@ -170,14 +171,15 @@ getContacts() {
 
             <div className = "container2">
 
-                <fieldset className = "contactList">
+                <div className = "contactList">
 
                     <h2>Your Contacts</h2>
 
                     {this.state.contacts.map((value, index)=>{
 
                         return(
-                            <fieldset className = "contact">
+
+                            <div className = "contact">
 
                                 <h3> {value.name} </h3>
 
@@ -195,13 +197,13 @@ getContacts() {
 
                                 </div>
 
-                            </fieldset>
+                            </div>
 
                         )
 
                     })}
 
-                </fieldset>
+                </div>
 
             </div>
 
@@ -216,13 +218,13 @@ getContacts() {
 
                     <form onSubmit = {this.add}>
 
-                        <input ref = "name" type = "text" placeholder = "Please Enter Contact Name" size = "40" />
+                        <input ref = "name" type = "text" placeholder = "Contact Name" />
 
                         <br/>
 
                         <br/>
 
-                        <input ref = "number" type = "text" placeholder = "Please Enter Phone Number" size = "40" />
+                        <input ref = "number" type = "text" placeholder = "Email / Phone Number" />
 
                         <br/>
 
