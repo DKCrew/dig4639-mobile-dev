@@ -153,7 +153,7 @@ getContacts() {
                 
                 <h1> Contact Tracker </h1>
 
-                    <div className = "containerMain">
+                    <div className = "container">
 
                     <div className = "mainProfile">
 
@@ -212,7 +212,7 @@ getContacts() {
 
             <fieldset className = "contactForm">
 
-                <h2>Add Your Contact Info!</h2>
+                <h2>Add Contact Info</h2>
                 
                 <div className ="inputField">
 
@@ -222,11 +222,17 @@ getContacts() {
 
                         <br/>
 
+                        <br/>
+
                         <input ref = "number" type = "text" placeholder = "Please Enter Phone Number" size = "40" />
 
                         <br/>
 
+                        <br/>
+
                         <button type = "submit"> Add To List </button>
+
+                        <br/>
 
                     </form>
 
